@@ -121,6 +121,67 @@
             <div class="recommended-products"></div>
         </section>
 
+        
+      <!-- register email -->
+      <section id="reg" class="py-5 bg-dark text-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+              <h2 class="mb-4 lobster-regular">Register for News and Offers</h2>
+              <form id="emailForm" onsubmit="return validateEmail()">
+                <div class="input-group mb-3">
+                  <input type="email" name="subs" id="subs" class="form-control form-control-lg rounded-pill" placeholder="Enter Your Email" required>
+                  <button class="btn btn-primary rounded-pill" type="submit" id="submit">
+                    <i class='bx bx-paper-plane'></i> Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Email Registered Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Email Registered</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Thank you for subscribing! You're now part of our exclusive circle. Stay tuned for updates, special offers, and exciting news coming your way!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ini js -->
+      <script>
+        document.getElementById("submit").addEventListener('click', function(event) {
+          event.preventDefault();
+          validateEmail();
+        });
+
+        function validateEmail() {
+          var email = document.getElementById("subs").value;
+          var modalContainer = document.getElementById("mod");
+
+          if (email.trim() != "") {
+            var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+              keyboard: false
+            });
+            myModal.show();
+
+            document.getElementById("subs").value = "";
+          } else {
+            alert("Please enter a valid email address.");
+          }
+        }
+      </script>
         <!-- Footer -->
         <footer class="footer">
             <div class="container">

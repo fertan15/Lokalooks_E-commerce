@@ -163,54 +163,41 @@ a{
     margin-bottom: 50px;
 }
 
-#reg{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 50px;
-    background-color: #333333;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.subjudul3{
-    width: 40vw;
-    font-size: 30vw;
-    color: white;
-}
-
-.subjudul3 h1{
-    font-size: 3vw;
-    font-family: "Staatliches";
-    text-shadow: #c4c4c4 0px 0px 10px;
-}
-
-#subs{
-    padding: 1vw;
-    text-align: center;
-    width: 30vw;
-    font-size: 2vw;
-    box-shadow: #c4c4c4 0px 0px 10px;
-    margin-right: 1vw;
-    font-family: "Staatliches";
-
-}
-
-#submit{
-    padding: auto;
-    width: 5vw;
-    box-shadow: #c4c4c4 0px 0px 10px;
-    font-family: "Staatliches";
-    font-size: 2vw;
-
-
-}
-
-#submit:hover{
-   scale: 1.15;
-
-}
-
+#reg {
+    font-family: "Staatliches", sans-serif;
+  }
+  
+  #reg .input-group .form-control {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  #reg .input-group .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  #reg .input-group .btn i {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    #reg .input-group .form-control {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+  
+    #reg .input-group .btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    #reg .input-group .btn i {
+      font-size: 1.2rem;
+    }
+  }
 footer {
     background-color: #222;
     color: #fff;
