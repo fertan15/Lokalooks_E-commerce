@@ -45,61 +45,73 @@ color: #333333;
 #find {
     margin-top: 60px;
     margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box {
-    position: relative;
-}
-
-#search{
-    width: 80vw;
-    padding: 18px;
-    border-radius: 20px;
-}
-
-.ic{
-    position: absolute;
-    top: 0;
-    right: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 2rem;
-    background-color: transparent;
+  }
+  
+  .input-group .form-control {
     border: none;
-}
-
-.ic:hover{
-    scale: 2;
-}
-
-
-.cat{ 
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-
-}
-
-.cat .active{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .input-group .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-group .btn:hover {
     background-color: #f4511e;
-}
-
-.cat button{
-    padding: 5px;
-    border-radius: 10px;
-    margin-left: 2vw;
-    font-family: "Staatliches";
-    min-width: 10vw;
-    font-size: 2vw;
-}
-
-.cat button:hover{
-    background-color: gray;
-}
-
+  }
+  
+  #category {
+    margin-bottom: 50px;
+  }
+  
+  .btn-group .btn {
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    margin: 0.25rem;
+  }
+  
+  .btn-group .btn.active {
+    background-color: #f4511e;
+    color: #fff;
+    border-color: #f4511e;
+  }
+  
+  .btn-group .btn:hover:not(.active) {
+    background-color: #f4511e;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    #find {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .input-group .form-control {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+  
+    .input-group .btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .btn-group .btn {
+      font-size: 1rem;
+      padding: 0.25rem 1rem;
+    }
+  }
 .card img{
     height: 300px;
     object-fit: cover;

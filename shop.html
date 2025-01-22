@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LokaLooks</title>
+    <title>LocaLooks</title>
     <!-- FAVICON -->
      <link rel="icon" href="./img/favicon_io/favicon.ico">
     <!-- FONT -->
@@ -73,7 +73,7 @@
                         0
                         <span class="visually-hidden">Shopping Cart</span>
                     </span>
-                </a>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -88,24 +88,36 @@
 
       <!-- Search Bar -->
       <section id="find">
-        <div class="box">
-          <input type="text" placeholder="Search" id="search">
-          <button class="ic">
-            <i class='bx bx-search'></i>
-          </button>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control form-control-lg rounded-pill pe-5" placeholder="Search" id="search">
+                <button class="btn btn-primary rounded-pill position-absolute end-0 me-2" type="button">
+                  <i class='bx bx-search'></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Category Filter -->
-      <section>
-        <div class="box cat">
-          <button class="active" data-category="ALL">ALL</button>
-          <button data-category="WOMAN">WOMAN</button>
-          <button data-category="MAN">MAN</button>
-          <button data-category="KIDS">KIDS</button>
-          <button data-category="FOOTWEARS">FOOTWEARS</button>
-          <button data-category="ACCESSORIES">ACCESSORIES</button>
-        </div>      
+      <section id="category">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <div class="btn-group btn-group-lg d-flex flex-wrap justify-content-center mb-4" role="group" aria-label="Category Filters">
+                <button type="button" class="btn btn-outline-primary active mx-2 my-1" data-category="ALL">ALL</button>
+                <button type="button" class="btn btn-outline-primary mx-2 my-1" data-category="WOMAN">WOMAN</button>
+                <button type="button" class="btn btn-outline-primary mx-2 my-1" data-category="MAN">MAN</button>
+                <button type="button" class="btn btn-outline-primary mx-2 my-1" data-category="KIDS">KIDS</button>
+                <button type="button" class="btn btn-outline-primary mx-2 my-1" data-category="FOOTWEARS">FOOTWEARS</button>
+                <button type="button" class="btn btn-outline-primary mx-2 my-1" data-category="ACCESSORIES">ACCESSORIES</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Product List -->
@@ -117,15 +129,13 @@
         let products = null; 
         let displayedProducts = []; 
         const listProduct = document.querySelector('.listProduct');
-        const categoryButtons = document.querySelectorAll('.box.cat button');
+        const categoryButtons = document.querySelectorAll('#category .btn');
         const searchInput = document.getElementById('search');
-
 
         function getQueryParam(param) {
           const urlParams = new URLSearchParams(window.location.search);
           return urlParams.get(param);
         }
-
 
         function displayProducts(filteredProducts) {
           listProduct.innerHTML = '';
