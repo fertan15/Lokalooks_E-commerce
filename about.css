@@ -494,9 +494,10 @@ footer .contact-info p span {
 
 .mini-games-highlights {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 2rem;
     margin-top: 2rem;
+    width: 100vw;
 }
 
 .mini-game-card {
@@ -505,7 +506,8 @@ footer .contact-info p span {
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
-    width: 250px;
+    width: 25vw;
+    height: auto;
 }
 
 .mini-game-card i {
@@ -520,6 +522,3 @@ footer .contact-info p span {
     font-size: 1.2rem;
 }
 
-.mini-games-highlights{
-    overflow-x: scroll;
-}
