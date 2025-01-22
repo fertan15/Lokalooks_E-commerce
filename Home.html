@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LokaLooks</title>
+    <!-- FAVICON -->
+     <link rel="icon" href="./img/favicon_io/favicon.ico">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&family=Cutive&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Home.css">
+  </head>
+  <body>
+    <div class="all-container">
+        <!-- navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <!-- Offcanvas Menu Toggler -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Logo -->
+              <a class="navbar-brand lobster-regular d-block d-lg-inline mb-2 mx-lg-5 mx-auto" style="font-size: 2rem; text-shadow: black 5px 5px; margin-left: 50px;" href="./Home.html">LocaLooks</a>
+              <!-- Offcanvas -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title lobster-regular" style="font-size: 3rem;" id="offcanvasNavbarLabel">LocaLooks</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav m-auto mb-2 mb-lg-0" style="margin-right: 50px;">
+                    <li class="nav-item ml-3">
+                      <a class="nav-link active" id="color" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                      <a class="nav-link" id="color" href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                      <a class="nav-link" id="color" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                      <a class="nav-link position-relative" id="color" href="./game.html" data-bs-toggle="popover" title="Play, Win, Repeat! Limited-Time Mini Games Are Here!" data-bs-content="Step into the excitement with our exclusive limited-time mini games!">Mini Game</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>    
+              <!-- Cart Icon -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link position-relative" style="font-size: 2rem; margin-right: 50px;" aria-current="page" href="./cart.html">
+                    <i class='bx bxs-cart'></i>  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: large;">
+                      0
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- end navbar -->
+
+         <!-- carousel -->
+          <section id="foto">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/1.png" class="d-block w-100" alt="..." style="max-height: 100vh; object-fit: cover;">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <img src="./img/2.png" class="d-block w-100" alt="..." style="max-height: 100vh; object-fit: cover;">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <img src="./img/3.png" class="d-block w-100" alt="..." style="max-height: 100vh; object-fit: cover;">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <img src="./img/4.png" class="d-block w-100" alt="..." style="max-height: 100vh; object-fit: cover;">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <img src="./img/5.png" class="d-block w-100" alt="..." style="max-height: 100vh; object-fit: cover;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+          <!-- end carousel -->
+
+          <!-- category -->
+          <section id="category"> 
+                <a class="kard" href="shop.html?category=woman">
+                <img src="./img/woman.jpg" alt="Category-woman">
+                <div class="buton">
+                    <h5>WOMAN</h5>
+                  </button>
+                </div>
+                </a>
+
+              <a class="kard" href="shop.html?category=man">
+                <img src="./img/man.jpg" alt="Category-man">
+                <div class="buton">
+                  <h5>MAN</h5>
+                </div>
+              </a>
+
+              <a class="kard" href="shop.html?category=kids">
+                <img src="./img/kid.jpg" alt="Category-kids">
+                <div class="buton">
+                  <h5>KIDS</h5>
+                </div>
+              </a>
+
+              <a class="kard" href="shop.html?category=footwears">
+                <img src="./img/shoe.jpg" alt="Category-footwears">
+                <div class="buton">
+                  <h5>FOOTWEARS</h5>
+                </div>
+              </a>
+              <a class="kard" href="shop.html?category=accessories">
+                <img src="./img/acce.jpg" alt="Category-accesories">
+                <div class="buton">
+                  <h5>ACCESSORIES</h5>
+                </div>
+              </a>
+          </section>
+          <!-- End Category -->
+
+           <!-- quote and foto -->
+          <section>
+            <div class="subjudul">   
+              <blockquote>
+                <p>
+                  Fashion is not necessarily about labels. It’s not about brands. It’s about something else that comes from within you. It’s an expression of who you are, your creativity, your individuality, and your energy. The way you carry yourself speaks louder than anything you wear                </p>
+                <cite>Ralph Lauren</cite>
+            </blockquote>
+            </div>
+            <div class="photo">
+              <img src="./img/pexels-pixabay-157675.jpg" alt="">
+              <img class="marginl" src="./img/pexels-kowalievska-1040384.jpg" alt="">
+              <img class="marginl" src="./img/pexels-harsh-kushwaha-804217-1689731.jpg" alt="">
+            </div>
+            <div class="exp">
+              <h1>Explore</h1>
+            <a href="./shop.html"> <button data-bs-toggle="tooltip" data-bs-placement="top" title="Shop Now">Shop Now</button></a>
+            </div>
+          </section>
+          <!-- end of quote n foto -->
+
+          <!-- trending now -->
+          <section id="trending">
+            <div class="subjudul2">
+              <h1 style="font-size: 10vw; transform: scaleX(1.7);" >TRENDING NOW</h1>
+            </div>
+            <div class="trend">
+              <div class="kartu">
+                  <div class="pic">
+                    <img style="object-fit: cover;" src="./img/fishemer aesthetic.png" class="img-fluid rounded-start" alt="Fisherman Aesthetic">
+                  </div>
+                  <div class="title">
+                    <h5>Fisherman Aesthetic</h5>
+                  </div>
+                  <div class="dec">
+                    <p>the fisherman aesthetic blends rugged utility with timeless style features chunky knits, waterproof outerwear, wide-legged trousers, and nautical stripes.</p>
+                  </div>
+              </div>
+
+              <div class="kartu">
+                <div class="pic">
+                  <img style="object-fit: cover;" src="./img/primitive.png" class="img-fluid rounded-start" alt="Primitive and Instinctive Menswear">
+                </div>
+                <div class="title">
+                  <h5>Primitive and Instinctive Menswear</h5>
+                </div>
+                <div class="dec">
+                  <p>The inclusion of western-inspired elements like cowboy boots and wrangler-style knitwear adds a rugged touch to the modern wardrobe.</p>
+                </div>
+            </div>
+            <div class="kartu">
+              <div class="pic">
+                <img style="object-fit: cover;" src="./img/pierced.png" class="img-fluid rounded-start" alt="Pierced Clothing">
+              </div>
+              <div class="title">
+                <h5>Pierced Clothing</h5>
+              </div>
+              <div class="dec">
+                <p>This trend incorporates metal rings and studs into garments, providing a flawless punk-inspired aesthetic that's both bold and versatile.</p>
+              </div>
+          </div>
+            </div>
+          </section>
+          <!-- end trending now -->
+
+        <!-- register email -->
+        <section id="reg">
+          <div class="subjudul3">
+            <h1>Register your email for news and special offers</h1>
+          </div>
+          <div class="email">
+            <form id="emailForm" onsubmit="return validateEmail()">
+              <input type="email" name="subs" id="subs" placeholder="Enter Your Email" required>
+              <input type="submit" value="Send" id="submit">
+            </form>
+          </div>
+          <div id="mod"></div>
+        </section>
+
+        <!-- biar kalo input kosong modal ga kluar -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Email Registered</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Thank you for subscribing! You're now part of our exclusive circle. Stay tuned for updates, special offers, and exciting news coming your way!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ini js -->
+        <script>
+          document.getElementById("submit").addEventListener('click', function(event) {
+          event.preventDefault();
+          validateEmail();
+        });
+
+        function validateEmail() {
+          var email = document.getElementById("subs").value;
+          var modalContainer = document.getElementById("mod");
+          var inputField = document.getElementById("subs");
+
+          if (email.trim() != "") {
+            modalContainer.innerHTML = `
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Email Registered</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Thank you for subscribing! You're now part of our exclusive circle. Stay tuned for updates, special offers, and exciting news coming your way!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+
+            var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+              keyboard: false 
+            });
+
+            myModal.show();
+
+            inputField.value = "";
+          } else {
+            alert("Please enter a valid email address.");
+          }
+        }
+        </script>
+          <!-- end register email -->
+
+          <!-- footer -->
+          <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p style="text-align: justify;">Welcome to LocaLooks, your ultimate destination for curated local fashion. We are a homegrown e-commerce platform that celebrates the beauty, talent, and creativity of local artisans and designers. Our mission is to bring you closer to the unique charm of locally crafted clothing while supporting small businesses and fostering sustainable practices.</p>
+                </div>
+    
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./game.html">Mini Game</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li>Email: support@localooks.com</li>
+                        <li>Phone: +123 456 7890</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp-square'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LocaLooks</span>. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+    <script>
+            let cart = [];
+            function loadCart() {
+              const savedCart = localStorage.getItem('cart');
+              if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCartCount();
+              }
+            }
+
+            function saveCart() {
+              localStorage.setItem('cart', JSON.stringify(cart));
+              updateCartCount();
+            }
+
+            function updateCartCount() {
+              const cartCount = document.querySelector('.badge');
+              if (cartCount) {
+                cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+              }
+            }
+
+            function addToCart() {
+              if (!selectedSize) {
+                alert('Please select a size before adding to cart!');
+                return;
+              }
+
+              const quantity = parseInt(document.getElementById('quantity-input').value);
+              if (quantity < 1) {
+                alert('Please select a valid quantity!');
+                return;
+              }
+
+              const productId = new URLSearchParams(window.location.search).get('id');
+              const product = products.find(p => p.id == productId);
+              
+              if (!product) {
+                alert('Product not found!');
+                return;
+              }
+
+              const cartItem = {
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                size: selectedSize,
+                quantity: quantity,
+                image: product.image
+              };
+
+              const existingItemIndex = cart.findIndex(item => 
+                item.id === cartItem.id && item.size === cartItem.size
+              );
+
+              if (existingItemIndex !== -1) {
+                cart[existingItemIndex].quantity += quantity;
+              } else {
+                cart.push(cartItem);
+              }
+              saveCart();
+              alert(`Added to cart: ${cartItem.name} (Size: ${cartItem.size}) x${cartItem.quantity}`);
+            }
+            document.addEventListener('DOMContentLoaded', loadCart);
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

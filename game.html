@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+    <style>
+        *{
+            overflow: hidden;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            z-index: 1000;
+        }
+
+        .header-logo {
+            font-family: 'Lobster', cursive;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .header-buttons button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 0.625rem 1rem;
+            border-radius: 0.313rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .header-buttons button:hover {
+            background-color: #777;
+        }
+
+        footer {
+            width: 100vw;
+            background-color: #333;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        footer nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        footer nav a:hover {
+            color: #ffd700;
+        }
+
+        footer p {
+            font-size: 0.875rem;
+        }
+
+        .game {
+            margin-top: 80px;
+            padding-bottom: 100px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="header-logo">Lokalook</a>
+        <div class="header-buttons">
+            <button id="home-btn">🏠 Back to Home</button>
+            <button id="rules-btn">📖 Game Rules</button>
+        </div>
+    </header>
+
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+                <li>First to reach 5 points wins the game!</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="game">
+        <div class="contain">
+            <div class="scoreboard">
+                <div class="player-score">
+                    <h3>Player</h3>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="cpu-score">
+                    <h3>Computer</h3>
+                    <span id="cpu-score">0</span>
+                </div>
+            </div>
+
+            <div class="result_field">
+                <div class="result_images">
+                    <span class="user_result">
+                        <img src="./img/rock.png" alt="User's choice">
+                    </span>
+                    <span class="cpu_result">
+                        <img src="./img/rock.png" alt="Computer's choice">
+                    </span>
+                </div>
+                <div class="result">Let's Play!!</div>
+            </div>
+
+            <div class="option_images">
+                <span class="option_image" data-choice="rock">
+                    <img src="./img/rock.png" alt="Rock">
+                    <p>Rock</p>
+                </span>
+                
+                <span class="option_image" data-choice="paper">
+                    <img src="./img/paper.png" alt="Paper">
+                    <p>Paper</p>
+                </span>
+
+                <span class="option_image" data-choice="scissors">
+                    <img src="./img/scissors.png" alt="Scissors">
+                    <p>Scissors</p>
+                </span>
+            </div>
+
+            <div class="game-result-modal" id="game-result-modal">
+                <div class="game-result-content">
+                    <h2 id="game-result-text"></h2>
+                    <button id="reset-btn">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+        </nav>
+        <p>© 2025 Lokalook. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('home-btn').addEventListener('click', function() {
+            window.location.href = 'home.html';
+        });
+
+        const rulesBtn = document.getElementById('rules-btn');
+        const rulesModal = document.getElementById('rules-modal');
+        const closeModal = document.querySelector('.close-btn');
+
+        rulesBtn.addEventListener('click', function() {
+            rulesModal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', function() {
+            rulesModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === rulesModal) {
+                rulesModal.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="game.js" defer></script>
+</body>
+</html>
