@@ -519,3 +519,7 @@ footer .contact-info p span {
     padding: 10px 20px;
     font-size: 1.2rem;
 }
+
+.mini-games-highlights{
+    overflow-x: scroll;
+}
