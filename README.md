@@ -1,4 +1,4 @@
-<img width="1904" height="1019" alt="image" src="https://github.com/user-attachments/assets/63707add-67b9-47b5-b22e-59e0d76e5ee8" /># 🌟 Lokalooks E-commerce  
+🌟 Lokalooks E-commerce  
 
 <p align="center">
   <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
@@ -89,7 +89,7 @@ Lokalooks_Ecommerce/ <br>
 ├── game.css # Styles for the game page<br>
 ├── shop.html # Product listing page<br>
 ├── shop.css # Styles for shop/product grid<br>
-├── products.json # Product data (name, price, description, images)<br>
+├── products.json # Product data (name, price, description, images) <br>
 └── img/ # Images for products and branding<br>
 
 
@@ -149,12 +149,17 @@ This page demonstrates how **JavaScript can be used to add interactivity and fun
 
 ---
 
-## 🕹️ Game Page  
+## 🕹️ Game Page Details  
 
-The **Game Page** adds an element of fun and breaks up the shopping flow with interactivity.  
-- Could be a quiz, puzzle, or click-based challenge  
-- Immediate feedback using JavaScript  
-- Encourages users to **stay longer and engage more** with the site  
+To make the shopping experience more engaging, the site includes a **Rock–Paper–Scissors** mini-game 🎮.  
+
+- Users can play against the computer by choosing **Rock**, **Paper**, or **Scissors**.  
+- The computer generates a random choice each round.  
+- Results (Win / Lose / Draw) are displayed instantly.  
+- The game is styled with `game.css` for a clean, interactive feel.  
+- All logic is handled in `game.js` with simple JavaScript functions.  
+
+This page demonstrates how **JavaScript can be used to add interactivity and fun** to a static website.  
 
 ---
 
@@ -169,7 +174,7 @@ The **Game Page** adds an element of fun and breaks up the shopping flow with in
 
 This project was developed as part of a **Front-End Web Design course** (Semester 1).  
 
-Students gain practical experience with:  
+gain practical experience with:  
 - **Multi-Page Website Architecture** (separating HTML files)  
 - **Separation of Concerns** (HTML = structure, CSS = styling, JS = behavior)  
 - **Dynamic Data Loading** (JSON integration)  
