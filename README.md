@@ -68,8 +68,7 @@ It is hosted on **GitHub Pages**, making it instantly accessible to anyone with 
 - **HTML5** → Semantic structure and accessibility  
 - **CSS3** → Layouts, styling, responsive design, and animations  
 - **JavaScript (ES6)** → Dynamic behavior, cart logic, interactivity  
-- **JSON** → Product data storage and retrieval  
-
+- **JSON API** – Product data served from a static JSON file hosted online via GitHub Pages.
 ---
 
 ## 📂 Project Structure  
@@ -135,8 +134,15 @@ This page demonstrates how **JavaScript can be used to add interactivity and fun
 
 ## 🗂️ Data Management  
 
-- **Products**: Stored in `products.json` as an array of objects with `name`, `price`, `description`, and `image`.  
-- **Cart**: Managed in-browser using JavaScript. Updates instantly when users add or remove items. Optionally saved in **localStorage** for persistence.  
+**Product Data**  
+- Hosted online at: [https://fertan15.github.io/fileapi_product/products.json](https://fertan15.github.io/fileapi_product/products.json)  
+- Acts as a **simple API endpoint**  
+- Contains product name, price, description, and image URL  
+
+**Cart Data**  
+- Managed in-browser with JavaScript  
+- Auto-updates when adding/removing products  
+- Can persist with `localStorage`  
 
 ---
 
