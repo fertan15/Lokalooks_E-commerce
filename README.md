@@ -191,12 +191,10 @@ From this project, I learned how to:
 
 ## 💡 Future Improvements  
 
-- Add **user authentication** (login/registration)  
-- Implement a **checkout flow** with payment integration  
-- Enhance the **Game Page** with more levels and mechanics  
-- Add **product categories, filters, and search** functionality  
-- Allow **user reviews and ratings**  
-- Improve **accessibility** (keyboard navigation, ARIA labels, etc.)  
+- Add user login & checkout system  
+- Connect to a real backend API for product management  
+- Enhance the Rock–Paper–Scissors game with scoring system  
+- Implement accessibility improvements  
 
 ---
 
