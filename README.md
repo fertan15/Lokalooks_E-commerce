@@ -176,17 +176,16 @@ This page demonstrates how **JavaScript can be used to add interactivity and fun
 
 ---
 
-## 🎓 Educational Value  
+## 🎓 Learning Outcomes  
 
-This project was developed as part of a **Front-End Web Design course** (Semester 1).  
+From this project, I learned how to:  
+- Build a **multi-page responsive website** using HTML, CSS, and JavaScript  
+- Use **JSON API** for external product data integration  
+- Manage user interaction with **shopping cart logic**  
+- Apply **game logic** in JavaScript through Rock–Paper–Scissors  
+- Organize project files and maintain separation of concerns  
+- Deploy and host a project using **GitHub Pages**  
 
-gain practical experience with:  
-- **Multi-Page Website Architecture** (separating HTML files)  
-- **Separation of Concerns** (HTML = structure, CSS = styling, JS = behavior)  
-- **Dynamic Data Loading** (JSON integration)  
-- **Interactive Features** (shopping cart + game page)  
-- **Responsive Web Design** principles  
-- **Static Deployment** with GitHub Pages  
 
 ---
 
